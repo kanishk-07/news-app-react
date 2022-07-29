@@ -1,16 +1,16 @@
 import './Navbar.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+// useLocationHook from 'react' can be used to display nav items as active(bright white)
 export default function Navbar() {
 	return (
 		<div>
 			<nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 				<div className="container-fluid">
-					<a className="navbar-brand" href="/">
+					<Link className="navbar-brand" to="/">
 						<img src="logo192.png" alt="" width="30" height="30" className="d-inline-block align-text-top" aria-current="page"/>
 						NewsMonkey
-					</a>
+					</Link>
 					<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span className="navbar-toggler-icon"></span>
 					</button>
